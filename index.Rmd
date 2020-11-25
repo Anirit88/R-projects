@@ -1,0 +1,39 @@
+---
+title: "Assignment3: Incarceration rates"
+author: "Anirit bansal"
+date: "11/21/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+source("analysis(a3).R")
+library("knitr")
+```
+
+## Introduction + Summary Information
+
+For this assignment i decided to work with data that focused more on different gender incarceration rates and population. The reason ichose this is becasue currently  the society is still battling gender inequality and i thought it would be interesting to see how varied the data would  be among genders.
+
+Working with  this dataset, i was able to find out the total number of males and female inmates from each state between the ages 15 and 64 for 2018 with their difference in 2018 being 'r total_inmates2018', while similarly for 1970  the difference was 'r total_inmates1970'. The state with maximum males and females incarcerated over the years are 'r max_males_incarcerated' and 'r max_females_incarcerated'. Additionally, i calculated the ratio of female to male incarceration population stored in 'r ratio'
+
+## Trends over time Chart
+For this part I chose to explore the trend over time chart for the most recent year and the earliest year of recorded incarceration rates for males VS females. From this chart we can see how over the years for both male and female the total population increases, while females increase at a more exponential rate.
+```{r, echo=FALSE}
+trend_chart_male
+trend_chart_female
+```
+
+## Variable Comparison Chart
+The Variable comparison chart i opted to explore further was a scatterplot comparing the gradual increase in population for male and female incarcerated.From these charts we can see how femlaes population increases more  rapidly than males.
+
+```{r, echo=FALSE}
+comparison_chart_female
+comparison_chart_male
+```
+
+## Map
+This map shows the ratio of females to males incarceration rates amongst states in america. From this map we can see that states with a ratio above 1 have more females while states with vale less than 1 have more males incarcerated. 
+
+```{r, echo=FALSE}
+map
+```
